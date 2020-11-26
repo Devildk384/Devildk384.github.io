@@ -1,0 +1,47 @@
+.about{
+    display: grid;
+    grid-column: center-start/center-end;
+    grid-template-columns: repeat(5,1fr);
+    padding: 15rem 0;
+    align-self: center;
+
+    &__wrapper{
+        grid-column: 2/-1;
+      
+        padding-right: 5%;
+    }
+
+    &__title{
+        display: flex;
+        margin-bottom: 4rem;
+        font-size: 3.2rem;
+        color: $color--darkGrey;
+        font-family: sans-serif;
+        font-weight: 700;
+        font-size: 2.8rem;
+        letter-spacing: 2px;
+
+        &::after{
+            content: '';
+            display: block;
+            height: 1px;
+            width: 30rem;
+            background-color: $color--darkGrey;
+            position: relative;
+            top: 2.5rem;
+            margin-left: 20px;
+        }
+    }
+
+    &__text{
+        font-family: sans-serif;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        margin-bottom: 1.25rem;
+        color: $color--darkGrey;
+    }
+
+
+
+    
+}

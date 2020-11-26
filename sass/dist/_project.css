@@ -1,0 +1,18 @@
+.project {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 3rem 0;
+}
+.project__img-wrapper {
+  grid-column: 1/span 8;
+  height: 100%;
+}
+.project__img-wrapper1 {
+  width: 100%;
+  position: relative;
+  object-fit: cover;
+  object-position: center;
+  opacity: 1;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
+}

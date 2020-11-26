@@ -1,0 +1,12 @@
+.hero {
+  grid-column: center-start/center-end;
+  padding: 15% 0;
+  height: 100%;
+  align-items: center;
+  justify-self: center;
+}
+.hero__content {
+  display: grid;
+  align-content: center;
+  height: 100%;
+}

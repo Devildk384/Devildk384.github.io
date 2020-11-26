@@ -1,0 +1,4 @@
+.work {
+  grid-column: center-start/center-end;
+  padding: 15rem 4%;
+}

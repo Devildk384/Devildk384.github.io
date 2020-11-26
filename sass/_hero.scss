@@ -1,0 +1,85 @@
+.hero{
+    grid-column: center-start/center-end;
+    padding: 25% 0;
+    height: 100%;
+    align-self: center;
+    justify-self: center;
+
+    &__content{
+        padding: 5% 4%;
+        display: grid;
+        align-content: center;
+        height: 100%;
+    }
+
+    &__text{
+        margin: 0;
+        font-size: 1.8rem;
+        color:$color--primaryColor;
+    }
+
+    &__name,h1{
+        margin: 0;
+        font-size: 8rem;
+        color:$color--darkGrey;
+        font-family: Poppins, sans-serif;
+        font-weight: 900;
+        letter-spacing: 2px;
+
+        
+    }
+
+    &__dot{
+        height: 1.5rem;
+        width: 1.5rem;
+        background-color: $color--darkGrey;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    &__subtitle,h2{
+        margin-top: 2rem;
+        font-size: 5rem;
+        color:$color--mediumGrey;
+        font-family: Poppins, sans-serif;
+        font-weight: 700;
+        letter-spacing: 2px;
+     
+      
+        
+    }
+    &__dot1{
+        height: 1rem;
+        width: 1rem;
+        background-color: $color--mediumGrey;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    
+
+    &__text-2{
+        padding: 3rem 0s;
+        margin: 4rem 0;
+        font-size: 1.8rem;
+        color:$color--lightGrey;
+    }
+
+    &__btn {
+        width: 18rem;
+        height: 6rem;
+        margin-top: 3rem;
+        font-size: 1.6rem;
+        color: $color--primaryColor;
+        background-color: $color--mainWhite;
+        border-radius: .4rem;
+        border: .2rem solid $color--primaryColor;
+        cursor: pointer;
+        transition: all .3s ease;
+
+        &:hover{
+            background-color: $color--mainbtn;
+        }
+
+    }
+}

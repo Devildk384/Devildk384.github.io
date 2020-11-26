@@ -1,0 +1,51 @@
+.work {
+    grid-column: center-start /center-end;
+    padding: 15rem 4%;
+
+    @media screen and (max-width:769px) {
+       
+        padding: 15rem 0;
+    }
+
+    
+
+    &__title {
+        display: flex;
+        font-size: 3.2rem;
+        color: $color--darkGrey;
+        
+
+        &::after{
+            content: '';
+            display: block;
+            height: 1px;
+            width: 30rem;
+            
+            background-color: $color--darkGrey;
+            position: relative;
+            top: 2.5rem;
+            margin-left: 20px;
+
+            @media screen and (max-width:769px) {
+       
+                width: 22vw;
+                margin-left: 15px;
+            }
+        }
+
+    }
+
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto,1fr);
+        grid-row-gap: 10rem;
+    
+        @media screen and (max-width:769px) {
+       
+         grid-template-rows: 1fr;
+         grid-row-gap: 5rem;
+        }
+    
+    }
+}

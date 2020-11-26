@@ -1,0 +1,103 @@
+// COLOR VARIABLES
+    $color--primaryColor: #41FBDA;
+    $color--secondaryColor: #5acfb4;
+    $color--mainWhite: #0A192F;
+    $color--mainbtn: #0d1b6d;
+    $color--offWhite: #f7f7f7;
+    $color--mainGrey: #e7e7e7;
+    $color--lightGrey: #909C9E;
+    $color--mediumGrey: #7E8AA7;
+    $color--darkGrey: #CCD6F6;
+    $color-card:#172A45;
+    $transition--mainTransition: all 0.3s linear;
+    $Spacing--mainSpacing: 2px;
+
+
+// FONT VARIABLES
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-medium: 50em;    // 800px;
+$bp-small: 37.5em;    // 600px;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    background-color: $color--mainWhite;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+
+    @media screen and (max-width:769px) {
+       
+        font-size: 50%; 
+    }
+
+    @media screen and (max-width:550px) {
+       
+        font-size: 37.5%; 
+    }
+
+   
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: [full-start] minmax(6rem,1fr) [center-start] repeat(8,[col-start] minmax(min-content,13rem) [col-end]) [center-end] minmax(6rem,1fr) [full-end];
+    grid-template-rows: auto 90vh repeat(2,min-content) 60vh 10rem;
+
+
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+ font-family:Poppins,sans-serif;
+ font-weight:700;
+ font-size:2.8rem;
+ letter-spacing:var(--mainSpacing);
+
+ 
+
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+ margin-bottom:1.25rem;
+ color:var(--darkGrey)
+}
+p {
+ font-family:Proza Libre,sans-serif;
+ font-size:1.5rem;
+ line-height:25px
+}
+
+
+@media screen and (max-width:769px) {
+    
+   
+}

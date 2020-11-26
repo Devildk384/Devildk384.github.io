@@ -1,0 +1,11 @@
+.about {
+  display: grid;
+  grid-column: center-start/center-end;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 15rem 0;
+  align-self: center;
+}
+.about__wrapper {
+  grid-column: 2/-1;
+  padding-right: 5%;
+}

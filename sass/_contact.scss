@@ -1,0 +1,43 @@
+.contact{
+    grid-column: center-start/center-end;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+
+    &__title{
+        font-size: 4rem;
+        margin-bottom: 5rem;
+        color: $color--darkGrey;
+        font-weight: 900;
+    }
+
+    &__phone{
+        font-size: 3rem;
+        color: $color--darkGrey;
+    }
+
+    &__btn {
+        width: 18rem;
+        height: 6rem;
+        margin-top: 3rem;
+        font-size: 1.6rem;
+        color: $color--primaryColor;
+        background-color: $color--mainWhite;
+        border-radius: .4rem;
+        border: .25rem solid $color--primaryColor;
+        cursor: pointer;
+        transition: all .3s ease;
+
+       
+
+        & a {
+            text-decoration: none;
+            color: $color--primaryColor;
+            background-color: $color--mainWhite;
+            
+
+        }
+
+    }
+
+}
